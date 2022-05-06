@@ -15,7 +15,7 @@ public class StudentController {
         return new Student("Ayesh","Dulanja");
     }
 
-    @GetMapping("/students") //http://localhost:8080/students
+    @GetMapping("/students") // http://localhost:8080/students
     public List<Student> getStudents(){
         List<Student> students = new ArrayList<>();
         students.add(new Student("Ayesh", "Dulanja"));
@@ -26,17 +26,20 @@ public class StudentController {
         return students;
     }
 
-    @GetMapping("/student/{fname}/{lname}") //http://localhost:8080/student/Ayesh/Dulanja
+    @GetMapping("/student/{fname}/{lname}") // http://localhost:8080/student/Ayesh/Dulanja
     public Student studentPathVariable(
             @PathVariable("fname") String fname,
             @PathVariable("lname") String lname){
         return new Student(fname, lname);
     }
 
-    @GetMapping("/student/query") //http://localhost:8080/student/query/?fname=Ayesh&lname=Dulanja
+    @GetMapping("/student/query") // http://localhost:8080/student/query/?fname=Ayesh&lname=Dulanja
     public Student studentQueryParam(
             @RequestParam(name = "fname") String fname ,
             @RequestParam(name = "lname") String lname){
         return new Student(fname, lname);
     }
 }
+
+//"?" using to add parameters
+//"@GetMapping" using to define path

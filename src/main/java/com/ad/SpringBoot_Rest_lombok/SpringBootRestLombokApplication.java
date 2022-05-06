@@ -8,9 +8,5 @@ public class SpringBootRestLombokApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(SpringBootRestLombokApplication.class, args);
-		Student std = new Student();
-		std.setFname("Ayesh");
-		std.setLname("Dulanja");
-		std.setId(1);
 	}
 }

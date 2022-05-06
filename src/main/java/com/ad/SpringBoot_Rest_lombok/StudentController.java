@@ -33,7 +33,7 @@ public class StudentController {
         return new Student(fname, lname);
     }
 
-    @GetMapping("/student/query")
+    @GetMapping("/student/query") //http://localhost:8080/student/query/?fname=Ayesh&lname=Dulanja
     public Student studentQueryParam(
             @RequestParam(name = "fname") String fname ,
             @RequestParam(name = "lname") String lname){

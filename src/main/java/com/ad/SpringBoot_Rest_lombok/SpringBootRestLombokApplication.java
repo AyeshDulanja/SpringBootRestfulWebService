@@ -1,6 +1,5 @@
 package com.ad.SpringBoot_Rest_lombok;
 
-import com.ad.SpringBoot_Rest_lombok.Model.Student;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
